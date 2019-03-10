@@ -26,6 +26,8 @@ bar {
 # #---Starting External Scripts---# #
 # Starts dunst for notifications:
 exec --no-startup-id dunst
+# Sets background image
+xec $term -e feh --bg-scale $HOME/Pictures/Wallpapers/blurred-tree.jpg
 # Composite manager:
 #exec --no-startup-id xcompmgr
 
