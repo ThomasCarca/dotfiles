@@ -22,6 +22,6 @@ These are my config files and scripts for the programs I often use.
 
 ### Kudos to 
 
-* [LukeSmithxyz](http://https://github.com/LukeSmithxyz.com) from who I got some scripts and config ideas. 
+* [LukeSmithxyz](http://https://github.com/LukeSmithxyz.com) from whom I got some scripts and config ideas. 
 * [/r/unixporn](https://www.reddit.com/r/unixporn)
 * [/r/linux](https://www.reddit.com/r/linux)
