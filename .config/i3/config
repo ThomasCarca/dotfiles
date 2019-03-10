@@ -7,7 +7,6 @@ set $term --no-startup-id x-terminal-emulator
 set $mod Mod4
 set $stoprec --no-startup-id dmenurecord kill
 set $shutdown sudo -A shutdown -h now
-set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
 set $shutdown sudo -A shutdown -h now
@@ -38,7 +37,7 @@ bindsym $mod+Shift+space 	floating toggle
 bindsym $mod+space		focus mode_toggle
 
 
-bindsym $mod+Shift+BackSpace	exec --no-startup-id $prompt "Reboot computer?" "$reboot"
+bindsym $mod+Shift+BackSpace	exec --no-startup-id $prompt "Reboot computer?" "reboot"
 
 # Show selection:
 bindsym $mod+Insert		exec --no-startup-id $showclip
@@ -47,6 +46,7 @@ bindsym $mod+Pause		exec --no-startup-id xcqr
 # #---Letter Key Bindings---# #
 
 bindsym $mod+c              exec $term -e tty-clock -scb -C 3
+bindsym $mod+g              exec --no-startup-id gitkraken
 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
@@ -154,3 +154,17 @@ bindsym $mod+Shift+Left		move left
 bindsym $mod+Shift+Down		move down
 bindsym $mod+Shift+Up		move up
 bindsym $mod+Shift+Right 	move right
+
+# Fn keys control
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q -D pulse sset Master 5%+ #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q -D pulse sset Master 5%- #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id amixer -q -D pulse sset Master toggle #mute sound
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86AudioMicMute exec amixer -D pulse sset Capture toggle
+#toggle microphone
+#bindsym XF86Display exec #switch between display
+#bindsym XF86Tools exec 
+#bindsym XF86Search exec
+#bindsym XF86LaunchA exec 
+#bindsym XF86Explorer exec 
