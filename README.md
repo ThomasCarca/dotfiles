@@ -9,16 +9,16 @@ These are my config files and scripts for the programs I often use.
 
 ### List of tools I use
 
-* **ncdu** -> Disk usage analyzer with an ncurses interface.
-* **tldr** -> Simplified man pages.
-* **dmenu** -> Fast and lightweight dynamic menu.
-* **neofetch** -> CLI tool to display information about your operating system, software and hardware.
-* **terminator** Arrange multiple GNOME terminals in one window.
-* **remarkable** Fully featured markdown editor.
-* **feh** -> Lightweight image viewing utility.
-* **xclip** -> X11 clipboard manipulation tool, similar to xsel.
-* **htop** -> Display dynamic real-time information about running processes. An enhanced version of top.
-* **tty-clock** -> A simple digital clock on the terminal.
+* **[ncdu](https://dev.yorhel.nl/ncdu)** -> Disk usage analyzer with an ncurses interface.
+* **[tldr](https://github.com/tldr-pages/tldr)** -> Simplified man pages.
+* **[dmenu](https://tools.suckless.org/dmenu/)** -> Fast and lightweight dynamic menu.
+* **[neofetch](https://github.com/dylanaraps/neofetch)** -> CLI tool to display information about your operating system, software and hardware.
+* **[terminator](https://launchpad.net/terminator)** Arrange multiple GNOME terminals in one window.
+* **[remarkable](https://remarkableapp.github.io/index.html)** Fully featured markdown editor.
+* **[feh](https://feh.finalrewind.org/)** -> Lightweight image viewing utility.
+* **[xclip](https://github.com/astrand/xclip)** -> X11 clipboard manipulation tool, similar to xsel.
+* **[htop](https://github.com/hishamhm/htop)** -> Display dynamic real-time information about running processes. An enhanced version of top.
+* **[tty-clock](https://github.com/xorg62/tty-clock)** -> A simple digital clock on the terminal.
 
 ### Kudos to 
 
