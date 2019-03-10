@@ -19,6 +19,7 @@ These are my config files and scripts for the programs I often use.
 * **[xclip](https://github.com/astrand/xclip)** -> X11 clipboard manipulation tool, similar to xsel.
 * **[htop](https://github.com/hishamhm/htop)** -> Display dynamic real-time information about running processes. An enhanced version of top.
 * **[tty-clock](https://github.com/xorg62/tty-clock)** -> A simple digital clock on the terminal.
+* **[gitkraken](https://www.gitkraken.com/)** -> Git client for repo management, in-app code editing & issue tracking.
 
 ### Kudos to 
 
