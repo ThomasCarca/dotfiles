@@ -1,0 +1,156 @@
+# #---Basic Definitions---# #
+# Needed for i3-gaps
+for_window [class="^.*"] border pixel 2
+gaps inner 15
+gaps outer 5 
+set $term --no-startup-id x-terminal-emulator
+set $mod Mod4
+set $stoprec --no-startup-id dmenurecord kill
+set $shutdown sudo -A shutdown -h now
+set $reboot sudo -A reboot
+set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
+set $hibernate sudo -A systemctl suspend
+set $shutdown sudo -A shutdown -h now
+set $samedir /home/eisti/.config/i3/samedir.sh
+set $i3resize /home/eisti/.config/i3/i3resize.sh
+set $showclip /home/eisti/.config/i3/showclip.sh
+set $prompt /home/eisti/.config/i3/prompt.sh
+
+bar {
+	font pango:mono 10
+	status_command i3blocks
+	position top
+	mode dock
+	modifier None
+}
+
+# #---Starting External Scripts---# #
+# Starts dunst for notifications:
+exec --no-startup-id dunst
+# Composite manager:
+#exec --no-startup-id xcompmgr
+
+#---Basic Bindings---# #
+bindsym $mod+Return 		exec $term
+bindsym $mod+Shift+Return	exec ŝsamedir
+
+bindsym $mod+Shift+space 	floating toggle
+bindsym $mod+space		focus mode_toggle
+
+
+bindsym $mod+Shift+BackSpace	exec --no-startup-id $prompt "Reboot computer?" "$reboot"
+
+# Show selection:
+bindsym $mod+Insert		exec --no-startup-id $showclip
+bindsym $mod+Pause		exec --no-startup-id xcqr
+
+# #---Letter Key Bindings---# #
+
+bindsym $mod+c              exec $term -e tty-clock -scb -C 3
+
+bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+
+bindsym $mod+Shift+y		exec --no-startup-id $i3resize left
+
+bindsym $mod+Shift+u		exec --no-startup-id $i3resize down
+
+bindsym $mod+Shift+i		exec --no-startup-id $i3resize up
+
+bindsym $mod+Shift+o		exec --no-startup-id $i3resize right
+
+bindsym $mod+t			split toggle
+bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 5 
+
+bindsym $mod+s			gaps inner current plus 5
+bindsym $mod+Shift+s		gaps inner current minus 5
+
+bindsym $mod+d			exec --no-startup-id dmenu_run
+bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
+
+bindsym $mod+f			fullscreen toggle
+
+bindsym $mod+h			focus left
+bindsym $mod+Shift+h		move left 30
+
+bindsym $mod+i 			exec --no-startup-id $term -e vim /home/eisti/.config/i3/config
+
+bindsym $mod+j			focus down
+bindsym $mod+Shift+j		move down 30
+
+bindsym $mod+k			focus up
+bindsym $mod+Shift+k		move up 30
+
+bindsym $mod+l			focus right
+bindsym $mod+Shift+l		move right 30
+
+bindsym $mod+z			gaps outer current plus 5
+bindsym $mod+Shift+z		gaps outer current minus 5
+
+bindsym $mod+x			exec --no-startup-id mpc pause; exec --no-startup-id pauseallmpv ; exec --no-startup-id i3lock -e -f -c 1d2021
+bindsym $mod+Shift+x		exec --no-startup-id $prompt "Shutdown computer?" "$shutdown"
+
+# #---Workspace Bindings---# #
+bindsym $mod+Tab			workspace back_and_forth
+bindsym $mod+semicolon		split horizontal ;; exec $term
+bindsym $mod+slash			split vertical ;; exec $term
+bindsym $mod+Shift+slash	kill
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1		workspace $ws1
+bindsym $mod+2		workspace $ws2
+bindsym $mod+3		workspace $ws3
+bindsym $mod+4		workspace $ws4
+bindsym $mod+5		workspace $ws5
+bindsym $mod+6		workspace $ws6
+bindsym $mod+7		workspace $ws7
+bindsym $mod+8		workspace $ws8
+bindsym $mod+9		workspace $ws9
+bindsym $mod+0		workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1	move container to workspace $ws1
+bindsym $mod+Shift+2	move container to workspace $ws2
+bindsym $mod+Shift+3	move container to workspace $ws3
+bindsym $mod+Shift+4	move container to workspace $ws4
+bindsym $mod+Shift+5	move container to workspace $ws5
+bindsym $mod+Shift+6	move container to workspace $ws6
+bindsym $mod+Shift+7	move container to workspace $ws7
+bindsym $mod+Shift+8	move container to workspace $ws8
+bindsym $mod+Shift+9	move container to workspace $ws9
+bindsym $mod+Shift+0	move container to workspace $ws10
+
+# #---Function Buttons---# #
+bindsym $mod+F1		exec --no-startup-id google-chrome
+bindsym $mod+F2		exec --no-startup-id nautilus
+bindsym $mod+F3		exec --no-startup-id steam
+bindsym $mod+F4		exec --no-startup-id discord
+bindsym $mod+F5		exec 
+bindsym $mod+F6		exec 
+bindsym $mod+F7		exec 
+bindsym $mod+F8		exec
+bindsym $mod+F9		exec
+bindsym $mod+F10	exec
+bindsym $mod+F11	exec
+bindsym $mod+F12	restart 
+
+# #---Arrow Keys---# #
+bindsym $mod+Left		focus left
+bindsym $mod+Down		focus down
+bindsym $mod+Up			focus up
+bindsym $mod+Right 		focus right
+bindsym $mod+Shift+Left		move left
+bindsym $mod+Shift+Down		move down
+bindsym $mod+Shift+Up		move up
+bindsym $mod+Shift+Right 	move right
