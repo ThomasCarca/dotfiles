@@ -27,7 +27,7 @@ bar {
 # Starts dunst for notifications:
 exec --no-startup-id dunst
 # Sets background image
-xec $term -e feh --bg-scale $HOME/Pictures/Wallpapers/blurred-tree.jpg
+exec $term -e feh --bg-scale $HOME/Pictures/Wallpapers/blurred-tree.jpg
 # Composite manager:
 #exec --no-startup-id xcompmgr
 
@@ -158,9 +158,9 @@ bindsym $mod+Shift+Up		move up
 bindsym $mod+Shift+Right 	move right
 
 # Fn keys control
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q -D pulse sset Master 5%+ #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q -D pulse sset Master 5%- #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id amixer -q -D pulse sset Master toggle #mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks 
+bindsym XF86AudioMute exec --no-startup-id amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 bindsym XF86AudioMicMute exec amixer -D pulse sset Capture toggle
