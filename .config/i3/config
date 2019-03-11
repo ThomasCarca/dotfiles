@@ -16,11 +16,14 @@ set $showclip /home/eisti/.config/i3/showclip.sh
 set $prompt /home/eisti/.config/i3/prompt.sh
 
 bar {
-	font pango:mono 10
+	font pango:Menlo 16px
 	status_command i3blocks
 	position top
 	mode dock
 	modifier None
+    colors {
+        background #242424
+    }
 }
 
 # #---Starting External Scripts---# #
