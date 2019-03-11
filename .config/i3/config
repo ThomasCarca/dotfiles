@@ -50,7 +50,7 @@ bindsym $mod+Pause		exec --no-startup-id xcqr
 
 # #---Letter Key Bindings---# #
 
-bindsym $mod+c              exec $term -e tty-clock -scb -C 3
+bindsym $mod+c              exec $term -e tty-clock -sbc -C 3 -f "%d/%m/%Y" 
 bindsym $mod+g              exec --no-startup-id gitkraken
 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
