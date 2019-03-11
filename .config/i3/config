@@ -10,10 +10,10 @@ set $shutdown sudo -A shutdown -h now
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
 set $shutdown sudo -A shutdown -h now
-set $samedir /home/eisti/.config/i3/samedir.sh
-set $i3resize /home/eisti/.config/i3/i3resize.sh
-set $showclip /home/eisti/.config/i3/showclip.sh
-set $prompt /home/eisti/.config/i3/prompt.sh
+set $samedir $HOME/.config/i3/samedir.sh
+set $i3resize $HOME/.config/i3/i3resize.sh
+set $showclip $HOME/.config/i3/showclip.sh
+set $prompt $HOME/.config/i3/prompt.sh
 
 bar {
 	font pango:Menlo 16px
@@ -78,7 +78,7 @@ bindsym $mod+f			fullscreen toggle
 bindsym $mod+h			focus left
 bindsym $mod+Shift+h		move left 30
 
-bindsym $mod+i 			exec --no-startup-id $term -e vim /home/eisti/.config/i3/config
+bindsym $mod+i 			exec --no-startup-id $term -e vim $HOME/.config/i3/config
 
 bindsym $mod+j			focus down
 bindsym $mod+Shift+j		move down 30
