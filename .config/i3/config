@@ -93,7 +93,6 @@ bindsym $mod+z			gaps outer current plus 5
 bindsym $mod+Shift+z		gaps outer current minus 5
 
 bindsym $mod+x		        exec $HOME/.local/bin/betterlockscreen -l dim	
-bindsym Super_L             exec $HOME/.local/bin/betterlockscreen -l dim	 
 bindsym $mod+Shift+x		exec --no-startup-id $prompt "Shutdown computer?" "$shutdown"
 
 # #---Workspace Bindings---# #
