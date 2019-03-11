@@ -22,6 +22,8 @@ These are my config files and scripts for the programs I often use.
 * **[tty-clock](https://github.com/xorg62/tty-clock)** -> A simple digital clock on the terminal.
 * **[gitkraken](https://www.gitkraken.com/)** -> Git client for repo management, in-app code editing & issue tracking.
 * **[taskwarrior](https://taskwarrior.org/)** −> TODO list manager.
+* **[betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)** -> Lockscreen for linux systems.
+
 
 ### Kudos to 
 
