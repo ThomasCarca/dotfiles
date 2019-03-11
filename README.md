@@ -6,6 +6,7 @@ These are my config files and scripts for the programs I often use.
 ### Programs whose configs can be found here
 
 * **i3**
+* **i3blocks**
 
 ### List of tools I use
 
