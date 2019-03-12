@@ -6,10 +6,10 @@ gaps outer 5
 set $term --no-startup-id x-terminal-emulator
 set $mod Mod4
 set $stoprec --no-startup-id dmenurecord kill
-set $shutdown sudo -A shutdown -h now
-set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
-set $hibernate sudo -A systemctl suspend
-set $shutdown sudo -A shutdown -h now
+set $shutdown shutdown -h now
+set $netrefresh --no-startup-id systemctl restart NetworkManager
+set $hibernate systemctl suspend
+set $shutdown shutdown -h now
 set $samedir $HOME/.config/i3/samedir.sh
 set $i3resize $HOME/.config/i3/i3resize.sh
 set $showclip $HOME/.config/i3/showclip.sh
