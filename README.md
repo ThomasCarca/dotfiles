@@ -23,6 +23,7 @@ These are my config files and scripts for the programs I often use.
 * **[gitkraken](https://www.gitkraken.com/)** -> Git client for repo management, in-app code editing & issue tracking.
 * **[taskwarrior](https://taskwarrior.org/)** −> TODO list manager.
 * **[betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)** -> Lockscreen for linux systems.
+* **[ungit](https://github.com/FredrikNoren/ungit)** -> Open source git client for all platforms.
 
 
 ### Kudos to 
