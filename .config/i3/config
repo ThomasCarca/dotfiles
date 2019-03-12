@@ -33,10 +33,19 @@ exec --no-startup-id dunst
 exec $term -e feh --bg-scale $HOME/Pictures/Wallpapers/blurred-tree.jpg
 # Composite manager:
 #exec --no-startup-id xcompmgr
+# Setting workspace 1 layout 
+exec --no-startup-id "i3-msg 'workspace 1; append_layout '$HOME'/.config/i3/ws_1.json'"
+# Starting terminals : They should fit in the workspace 1 layout
+exec $HOME/.config/i3/load_ws_1.sh
+# Setting workspace 2 layout
+exec --no-startup-id "i3-msg 'workspace 2; append_layout '$HOME'/.config/i3/ws_2.json'" 
+# Starting chrome : It should fit in the worskpace 2 layout
+exec --no-startup-id google-chrome
 
 #---Basic Bindings---# #
 bindsym $mod+Return 		exec $term
 bindsym $mod+Shift+Return	exec $samedir
+
 
 bindsym $mod+Shift+space 	floating toggle
 bindsym $mod+space		focus mode_toggle
@@ -173,3 +182,8 @@ bindsym XF86AudioMicMute exec amixer -D pulse sset Capture toggle
 #bindsym XF86Search exec
 #bindsym XF86LaunchA exec 
 #bindsym XF86Explorer exec 
+
+# #---Shortcuts to quickly create workspaces using layouts---# #
+# Create a terminal-based workspace in the current workspace
+bindsym $mod+Ctrl+1 exec --no-startup-id "i3-msg 'append_layout '$HOME'/.config/i3/ws_1.json'"
+bindsym $mod+Ctrl+Shift+1 exec $HOME/.config/i3/load_ws_1.sh
