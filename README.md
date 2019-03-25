@@ -24,8 +24,8 @@ These are my config files and scripts for the programs I often use.
 * **[taskwarrior](https://taskwarrior.org/)** −> TODO list manager.
 * **[betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)** -> Lockscreen for linux systems.
 * **[ungit](https://github.com/FredrikNoren/ungit)** -> Open source git client for all platforms.
-* **[ARandR](visual front end for XRandR)** -> Visual front end for XRandR.
-* **[lsd](https://github.com/Peltoche/lsd)** -> The next gen ls command.
+* **[ARandR](https://christian.amsuess.com/tools/arandr/)** -> Visual front end for XRandR.
+* **[lsd](https://github.com/Peltoche/lsd)** -> 
 
 ### Kudos to 
 
