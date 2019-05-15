@@ -27,6 +27,7 @@ These are my config files and scripts for the programs I often use.
 * **[ARandR](https://christian.amsuess.com/tools/arandr/)** -> Visual front end for XRandR.
 * **[lsd](https://github.com/Peltoche/lsd)** -> The next gen ls command
 * **[gitstats](http://gitstats.sourceforge.net/)** -> A statistics generator for git
+* **[vivid](https://github.com/sharkdp/vivid)** -> A generator for LS_COLORS with support for multiple color themes
 
 ### Kudos to 
 
