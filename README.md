@@ -29,6 +29,7 @@ These are my config files and scripts for the programs I often use.
 * **[gitstats](http://gitstats.sourceforge.net/)** -> A statistics generator for git
 * **[vivid](https://github.com/sharkdp/vivid)** -> A generator for LS_COLORS with support for multiple color themes
 * **[wicd](https://help.ubuntu.com/community/WICD)** -> WICD is an open source wired and wireless network manager
+* **[dunst](https://dunst-project.org/)** -> Dunst is a lightweight replacement for the notification daemons provided by most desktop environments.
 
 ### Kudos to 
 
