@@ -5,6 +5,7 @@ These are my config files and scripts for the programs I often use.
 
 ### Programs whose configs can be found here
 
+* **dunst**
 * **i3**
 * **i3blocks**
 
