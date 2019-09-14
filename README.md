@@ -13,6 +13,7 @@ These are my config files and scripts for the programs I often use.
 
 * **[ARandR](https://christian.amsuess.com/tools/arandr/)** -> Visual front end for XRandR.
 * **[betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)** -> Lockscreen for linux systems.
+* **[copyq](https://github.com/hluk/CopyQ)** -> Clipboard manager with advanced features
 * **[dmenu](https://tools.suckless.org/dmenu/)** -> Fast and lightweight dynamic menu.
 * **[dunst](https://dunst-project.org/)** -> Dunst is a lightweight replacement for the notification daemons provided by most desktop environments.
 * **[feh](https://feh.finalrewind.org/)** -> Lightweight image viewing utility.

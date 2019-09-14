@@ -27,6 +27,8 @@ bar {
 }
 
 # #---Starting External Scripts---# #
+# Starts copyq for copy history
+exec --no-startup-id copyq
 # Starts dunst for notifications:
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 # Sets background image
@@ -151,7 +153,7 @@ bindsym $mod+F2		exec --no-startup-id nautilus; exec notify-send "Opening file e
 bindsym $mod+F3		exec --no-startup-id steam; exec notify-send "Launching steam"
 bindsym $mod+F4		exec --no-startup-id discord; exec notify-send "Opening discord"
 bindsym $mod+F5		exec --no-startup-id spotify; exec notify-send "Opening spotify"
-bindsym $mod+F6		exec 
+bindsym $mod+F6		exec --no-startup-id copyq toggle; exec notify-send "Toggling copy history" 
 bindsym $mod+F7		exec 
 bindsym $mod+F8		exec
 bindsym $mod+F9		exec
