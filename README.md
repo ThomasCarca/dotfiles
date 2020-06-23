@@ -8,7 +8,7 @@ These are my config files and scripts for the programs I often use.
 * **dunst**
 * **i3**
 * **i3blocks**
-* **terminator**
+* **terminator (requires fira-code font installed)**
 
 ### List of tools I use
 
