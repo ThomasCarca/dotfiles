@@ -33,7 +33,7 @@ These are my config files and scripts for the programs I often use.
 * **[vivid](https://github.com/sharkdp/vivid)** -> A generator for LS_COLORS with support for multiple color themes
 * **[wicd](https://help.ubuntu.com/community/WICD)** -> WICD is an open source wired and wireless network manager
 * **[xclip](https://github.com/astrand/xclip)** -> X11 clipboard manipulation tool, similar to xsel.
-* **[starship](https://starship.rs/) -> The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+* **[starship](https://starship.rs/)** -> The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 ### Kudos to 
 
